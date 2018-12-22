@@ -7,6 +7,8 @@
 </head>  
 <body>  
 <h1>Registered successfully</h1>
-<a href="bookingForm">Click here for register page.</a>  
+<form action="home">
+	Home<input type="submit"> 
+</form>
 </body>  
 </html>  
