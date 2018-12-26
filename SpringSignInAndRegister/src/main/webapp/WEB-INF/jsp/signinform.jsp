@@ -28,8 +28,8 @@ ${message}
         </table>    
        </form:form>  --%>    
  <form action="homepage" method="post">
-Email:<input type="email" name="email">
-Password:<input type="password" name="password">
+Email:<input type="email" name="email" required="off">
+Password:<input type="password" name="password" required="off">
 <br>
 <input type="submit" value="log-in"> 
 <a href="register">Register</a>

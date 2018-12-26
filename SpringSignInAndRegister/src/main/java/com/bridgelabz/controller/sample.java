@@ -3,7 +3,6 @@ package com.bridgelabz.controller;
 
 import java.util.ArrayList;
 
-import org.springframework.beans.factory.annotation.Autowire;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -54,22 +53,42 @@ String homePage(@ModelAttribute("emp") Employee emp,Model model)
 	   if(flag==0)
 	   {
 		 //  System.out.println("hi");
-		   String msg="Sorry re-enter the mail and password please sign-in again with validate mail and password";
+		   String msg="Sorry, Re-enter the mail and password please sign-in again with validate mail and password";
 		   model.addAttribute("message", msg);
 		   return "signinform";
 	   }
 	   }
-	  String msg="Sorry user, You are the first register please register ur account";
-	  model.addAttribute("message", msg);
-	   return "signinform"; 
+	   		String msg="Sorry user, You are the first register please register ur account";
+	   		model.addAttribute("message", msg);
+	   		return "signinform"; 
 	
 	
 }
 @RequestMapping(value="/save",method = RequestMethod.POST)
-String addEmployee(@ModelAttribute("emp") Employee emp)
+String addEmployee(@ModelAttribute("emp") Employee emp,Model model)
 {
 	//System.out.println(emp);
-	employee.save(emp);
-	return "redirect:index.jsp";
+	boolean check=emailValidation(emp);
+	if(check)
+	{
+		employee.save(emp);
+		return "redirect:index.jsp";
+	}
+	 	String msg="Sorry user, Email is already exist...!";
+	 	model.addAttribute("message", msg);
+	 	return "registerform"; 
+}
+
+private boolean emailValidation(Employee emp) 
+{
+	   ArrayList<Employee> list=(ArrayList<Employee>) employee.getEmployees();
+	   for (int i = 0; i < list.size(); i++) 
+	   {
+		   if(list.get(i).getEmail().equals(emp.getEmail()))
+		   {
+			   return false;
+		   }
+	   }
+	   return true;
 }
 }
