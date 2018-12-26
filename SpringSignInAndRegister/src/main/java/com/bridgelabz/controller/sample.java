@@ -16,7 +16,7 @@ import com.bridgelabz.dao.EmpDao;
 @Controller
 public class sample 
 {
-@Autowired    
+ @Autowired 
 EmpDao employee;
 @RequestMapping("/signin")	
 String signIn()	

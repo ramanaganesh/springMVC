@@ -28,6 +28,8 @@
 </bean>    
     
 <bean id="dao" class="com.bridgelabz.dao.EmpDao">    
+<property name="key" value="ramana"></property>
+
 <property name="template" ref="jt"></property>    
 </bean>  
  

@@ -13,6 +13,21 @@ Password:<input type="password" name="password" required pattern="(?=.*\d)(?=.*[
 <br>
 <input type="submit" value="submit">  
 </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- <script>
@@ -46,8 +61,6 @@ Password:<input type="password" name="password" required pattern="(?=.*\d)(?=.*[
 	
 	}
 	</script> -->
-</body>
-</html>
 
 
 

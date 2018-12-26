@@ -11,6 +11,27 @@
 <body>
 ${message}
 <h1>Welcome to sign-in page</h1>
+  
+ <form action="homepage" method="post">
+Email:<input type="email" name="email" required="off">
+Password:<input type="password" name="password" required="off">
+<br>
+<input type="submit" value="log-in"> 
+<a href="register">Register</a>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
 <%-- <form:form method="post" action="save">    
         <table >    
          <tr>    
@@ -26,13 +47,4 @@ ${message}
           <td><input type="submit" value="Save" /></td>    
          </tr>    
         </table>    
-       </form:form>  --%>    
- <form action="homepage" method="post">
-Email:<input type="email" name="email" required="off">
-Password:<input type="password" name="password" required="off">
-<br>
-<input type="submit" value="log-in"> 
-<a href="register">Register</a>
-</form>
-</body>
-</html>
+       </form:form>  --%>  

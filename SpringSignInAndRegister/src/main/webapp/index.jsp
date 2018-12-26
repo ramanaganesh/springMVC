@@ -1,8 +1,8 @@
 <html>
 <body>
-<h1>Welcome </h1>
-<a href="signin">Sign-in</a>
+<h1>Welcome     To     Login      And     Registration </h1>
+Already Account : <a href="signin">Sign-in</a>
 <br>
-<a href="register">Register-page</a>
+Create a New Account : <a href="register">Register-page</a>
 </body>
 </html>
