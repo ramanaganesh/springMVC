@@ -4,12 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Admin      Page</title>
 </head>
 <body>
-${message}  
-<br><br>  
- <jsp:include page="/index.jsp"></jsp:include>  
+ 
+<h1>Welcome   ${name},   To     Admin      Page</h1>  
  
 </body>
 </html>

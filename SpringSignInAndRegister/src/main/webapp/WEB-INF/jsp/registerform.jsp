@@ -9,6 +9,7 @@ ${message}
 <form action="save"  method="post">
 Name:<input type="text" name="name">
 Email:<input type="email" name="email">
+Role:<input type="text" name="role">
 Password:<input type="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 <br>
 <input type="submit" value="submit">  
@@ -16,7 +17,7 @@ Password:<input type="password" name="password" required pattern="(?=.*\d)(?=.*[
 </body>
 </html>
 
-
+ 
 
 
 

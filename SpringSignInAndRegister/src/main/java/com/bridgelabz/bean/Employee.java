@@ -9,6 +9,7 @@ public class Employee
 	private String designation; */
 	private String email;
 	private String password;
+	private String role;
 	    
 	public int getId() {    
 	    return id;    
@@ -49,6 +50,12 @@ public class Employee
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", email=" + email + ", password=" + password + "]";
+	}
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
 	}
 	    
 }
